@@ -21,6 +21,16 @@
     },
     "lint": {
       "executor": "@nx-go/nx-go:lint"
+    },
+    "docker-serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "docker-compose up"
+        ],
+        "cwd": "apps",
+        "parallel": false
+      }
     }
   },
   "tags": []
