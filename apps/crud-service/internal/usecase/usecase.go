@@ -1,9 +1,9 @@
 package usecase
 
 import (
-	"task/crud/internal"
-	"task/models"
-	grpcservice "task/pkg/grpc"
+	"apps/apps/crud-service/internal"
+	"apps/apps/models"
+	grpcservice "apps/apps/pkg/grpc"
 )
 
 type Service struct {

@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"task/models"
+	"apps/apps/models"
 )
 
 type UseCase interface {

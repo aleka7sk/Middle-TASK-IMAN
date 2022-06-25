@@ -7,13 +7,13 @@
       "executor": "@nx-go/nx-go:build",
       "options": {
         "outputPath": "dist/apps/crud-service",
-        "main": "apps/crud-service/main.go"
+        "main": "apps/crud-service/cmd/app/main.go"
       }
     },
     "serve": {
       "executor": "@nx-go/nx-go:serve",
       "options": {
-        "main": "apps/crud-service/main.go"
+        "main": "apps/crud-service/cmd/app/main.go"
       }
     },
     "test": {

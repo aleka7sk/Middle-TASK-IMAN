@@ -7,13 +7,13 @@
       "executor": "@nx-go/nx-go:build",
       "options": {
         "outputPath": "dist/apps/parser",
-        "main": "apps/parser/main.go"
+        "main": "apps/parser/cmd/app/main.go"
       }
     },
     "serve": {
       "executor": "@nx-go/nx-go:serve",
       "options": {
-        "main": "apps/parser/main.go"
+        "main": "apps/parser/cmd/app/main.go"
       }
     },
     "test": {

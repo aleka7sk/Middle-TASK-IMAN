@@ -1,8 +1,8 @@
 package usecase
 
 import (
-	"task/models"
-	"task/parser/internal"
+	"apps/apps/models"
+	"apps/apps/parser/internal"
 )
 
 type Service struct {

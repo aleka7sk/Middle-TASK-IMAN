@@ -1,8 +1,8 @@
 package http
 
 import (
+	"apps/apps/pkg/grpc"
 	"github.com/gin-gonic/gin"
-	"task/pkg/grpc"
 )
 
 func RegisterHTTPEndpoints(router *gin.Engine, parserUsecase grpc.CreatorClient, crudUsecase grpc.EditorClient) {

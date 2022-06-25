@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"task/models"
-	grpcservice "task/pkg/grpc"
+	"apps/apps/models"
+	grpcservice "apps/apps/pkg/grpc"
 )
 
 type UseCase interface {

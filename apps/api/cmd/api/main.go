@@ -1,9 +1,9 @@
 package main
 
 import (
+	"apps/apps/api/config"
+	"apps/apps/api/server"
 	"log"
-	"task/api/config"
-	"task/api/server"
 )
 
 func main() {
@@ -13,7 +13,7 @@ func main() {
 	}
 	app := server.NewApp()
 	if err != nil {
-		log.Fatalf("Create api error: %v\n", err)
+		log.Fatalf("Create app error: %v\n", err)
 	}
 	if err := app.Run(config); err != nil {
 		log.Fatalf("App run error: %v\n", err)
