@@ -1,0 +1,18 @@
+  syntax = "proto3";
+
+  package parser;
+
+  option go_package = "pkg/grpc";
+
+
+  service Creator {
+    rpc Parse(Request) returns (Response);
+  }
+
+  message Request {
+    string url = 1;
+  }
+
+  message Response {
+    string status = 1;
+  }
