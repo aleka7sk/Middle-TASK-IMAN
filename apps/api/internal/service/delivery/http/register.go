@@ -1,12 +1,12 @@
 package http
 
 import (
-	"apps/apps/pkg/grpc"
+	"apps/apps/api/internal/service"
 	"github.com/gin-gonic/gin"
 )
 
-func RegisterHTTPEndpoints(router *gin.Engine, parserUsecase grpc.CreatorClient, crudUsecase grpc.EditorClient) {
-	h := NewHandler(parserUsecase, crudUsecase)
+func RegisterHTTPEndpoints(router *gin.Engine, uc service.UseCase) {
+	h := NewHandler(uc)
 	v1 := router.Group("/")
 	{
 		v1.POST("parse", h.ParsePosts)
